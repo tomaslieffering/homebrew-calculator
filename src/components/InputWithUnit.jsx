@@ -30,8 +30,8 @@ function InputWithUnit(props) {
 
 				{dropdown ? (
 					<div className='absolute flex justify-end w-full z-2'>
-						<div id="dropdown" className="z-10 mt-10 bg-white divide-y divide-gray-100 rounded-e-lg shadow w-fit dark:bg-gray-700">
-							<ul onClick={handleDropdownClick} className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-button">
+						<div id="dropdown" className="z-10 mt-10 bg-white divide-y divide-gray-100 rounded-e-lg shadow w-fit">
+							<ul onClick={handleDropdownClick} className="py-2 text-sm text-gray-700" aria-labelledby="dropdown-button">
 								{units.map((unit) =>
 									<li key={unit.id}>
 										<span className="text-right block px-4 py-2 hover:bg-gray-100">{unit.label}</span>

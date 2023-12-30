@@ -15,7 +15,7 @@ function App() {
           Homebrew Recipe Calculator & Converter
         </h1>
         <TotalAmount setRatio={setRatio} ></TotalAmount>
-        <div className="w-full p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400" role="alert">
+        <div className="w-full p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50" role="alert">
           <FontAwesomeIcon className='pr-2' icon={faPercent} />
           
           <span className="font-bold">Current recipe ratio:</span> {Math.round(( ratio * 100))}%

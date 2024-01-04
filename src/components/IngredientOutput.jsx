@@ -18,9 +18,9 @@ function IngredientOutput(props) {
 			<div className={`p-4 shadow-md rounded-lg w-full ${type === "malt" ? "bg-red-100" : "bg-green-100"}`} >
 				<div className='flex'>
 					<span htmlFor={ingredient.name} className="grow block mb-2 text-lg font-medium text-gray-900">
-						{ingredient.name}: {ingredient.id}
+						{ingredient.name}
 					</span>
-					<button className='text-red-500 hover:text-red-700' onClick={handleIngredientsRemove(ingredient.id)}>
+					<button className='self-start text-red-500 hover:text-red-700' onClick={handleIngredientsRemove(ingredient.id)}>
 						<FontAwesomeIcon className="w-6 h-6" icon={faCircleXmark} />
 					</button>
 				</div>

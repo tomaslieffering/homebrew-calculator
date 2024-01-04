@@ -33,7 +33,7 @@ function IngredientAdd(props) {
 	if (open) {
 		return (
 			<div>
-				<form onSubmit={handleSubmit} className="w-full p-4 shadow">
+				<form onSubmit={handleSubmit} className="w-full p-4 shadow mb-2">
 					<div className="mb-5">
 						<div className='flex mb-2' >
 							<label htmlFor="title" className="grow block text-md font-medium text-gray-900 capitalize">{type} name</label>
@@ -45,7 +45,7 @@ function IngredientAdd(props) {
 					</div>
 					<InputWithUnit handleChange={handleAmountChange} amount={amount} units={units} selected={selected} setSelected={setSelected} label="Original recipe calls for:"/>
 
-					<button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-md w-full px-5 py-2.5 text-center">Add to recipe</button>
+					<button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-md w-full px-5 py-2.5 mt-4 text-center">Add to recipe</button>
 				</form>
 			</div>
 		)

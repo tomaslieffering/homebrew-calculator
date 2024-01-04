@@ -18,7 +18,7 @@ function InputWithUnit(props) {
 	}
 
 	return (
-		<div className="relative flex flex-col w-full mb-5">
+		<div className="relative flex flex-col w-full">
 			<label htmlFor="amount" className="block mb-2 text-md font-medium text-gray-900">{label}</label>
 			<div className='flex h-10'>
 				<input onChange={handleChange} value={amount} type="number" id="amount" className="block text-right p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-s-lg rounded-s-gray-100 border border-gray-300" placeholder="Amount" />

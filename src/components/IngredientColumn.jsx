@@ -9,9 +9,8 @@ let ingredientsId = 0;
 function IngredientsColumn(props) {
 
 
-	const { title, ratio, icon } = props;
-
-	const [ingredients, setIngredients] = useState([]);
+	const { title, ratio, icon, ingredients, setIngredients } = props;
+	
 	const [open, setOpen] = useState(false);
 
 	const handleOpen = () => {
